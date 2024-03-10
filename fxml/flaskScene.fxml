@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="386.0" prefWidth="496.0" style="-fx-background-color: AliceBlue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <Label layoutX="167.0" layoutY="28.0" prefHeight="45.0" prefWidth="162.0" text="Make water" textFill="#3775cd">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="29.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="191.0" layoutY="88.0" prefHeight="245.0" prefWidth="115.0" spacing="10.0">
+         <children>
+            <CheckBox fx:id="ox" alignment="TOP_CENTER" focusTraversable="false" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="246.0" text="Oxygen " textFill="#6078ff">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="23.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="so" alignment="TOP_CENTER" focusTraversable="false" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="212.0" text="Sodium" textFill="#6078ff">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="23.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="po" alignment="TOP_CENTER" focusTraversable="false" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="208.0" text="Potassium" textFill="#6078ff">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </CheckBox>
+            <CheckBox fx:id="hy" alignment="TOP_CENTER" focusTraversable="false" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="194.0" text="Hydrogen" textFill="#6078ff">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="23.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="he" alignment="TOP_CENTER" focusTraversable="false" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="213.0" text="Helium" textFill="#6078ff">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="23.0" />
+               </font>
+            </CheckBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <ImageView fitHeight="119.0" fitWidth="126.0" layoutX="350.0" layoutY="51.0">
+         <image>
+            <Image url="@water.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="createLink" layoutX="214.0" layoutY="316.0" onMouseClicked="#crWater">
+         <graphic>
+            <ImageView fitHeight="62.0" fitWidth="62.0">
+               <image>
+                  <Image url="@create.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+   </children>
+</AnchorPane>

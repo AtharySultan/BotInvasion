@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MemoreygameController">
+    <children>
+      <ImageView fitHeight="369.0" fitWidth="544.0" layoutY="-4.0">
+         <image>
+            <Image url="@GR.jpg" />
+         </image>
+      </ImageView>
+        <VBox layoutX="144.0" layoutY="70.0" prefHeight="252.0" prefWidth="256.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="310.0">
+                    <children>
+                        <Button fx:id="button0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0">
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0">
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button2" layoutX="235.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0">
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="300.0">
+                    <children>
+                        <Button fx:id="button3" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0">
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button4" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0">
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button5" layoutX="110.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0">
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="300.0">
+                    <children>
+                        <Button fx:id="button6" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0">
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button7" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0">
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="110.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #37074b;" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+      <Label layoutX="203.0" layoutY="37.0" prefHeight="21.0" prefWidth="138.0" text="Matching pairs" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Black" size="17.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

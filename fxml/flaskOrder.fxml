@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="386.0" prefWidth="496.0" style="-fx-background-color: E2E6ED;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <Ellipse fill="#2d3032" layoutX="131.0" layoutY="162.0" radiusX="50.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#a9afb4" focusTraversable="true" layoutX="131.0" layoutY="158.0" onKeyPressed="#selectFlask" radiusX="50.0" radiusY="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Ellipse fill="#2d3032" layoutX="364.0" layoutY="162.0" radiusX="50.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#a9afb4" layoutX="364.0" layoutY="158.0" radiusX="50.0" radiusY="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Ellipse fill="#2d3032" layoutX="131.0" layoutY="304.0" radiusX="50.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#a9afb4" layoutX="131.0" layoutY="300.0" radiusX="50.0" radiusY="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Ellipse fill="#2d3032" layoutX="364.0" layoutY="304.0" radiusX="50.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#a9afb4" layoutX="364.0" layoutY="300.0" radiusX="50.0" radiusY="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Hyperlink fx:id="OrFlask" focusTraversable="false" layoutX="14.0" layoutY="18.0">
+         <graphic>
+            <ImageView fitHeight="115.0" fitWidth="100.0" onMouseClicked="#selectFlask">
+               <image>
+                  <Image url="@orangef.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Hyperlink>
+      <HBox layoutX="45.0" layoutY="352.0" prefHeight="26.0" prefWidth="409.0" spacing="25.0">
+         <children>
+            <RadioButton fx:id="or" focusTraversable="false" mnemonicParsing="false" text="Orange" textFill="#ffa81c">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tg" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="gr" focusTraversable="false" mnemonicParsing="false" text="Green" textFill="#1fa12c" toggleGroup="$tg">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rr" focusTraversable="false" mnemonicParsing="false" text="Red" textFill="#ed1010" toggleGroup="$tg">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="yr" focusTraversable="false" mnemonicParsing="false" text="Yellow" textFill="#ffd608" toggleGroup="$tg">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="13.0" />
+               </font>
+            </RadioButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Hyperlink fx:id="redFlask" focusTraversable="false" layoutX="254.0" layoutY="18.0">
+         <graphic>
+            <ImageView fitHeight="115.0" fitWidth="100.0">
+               <image>
+                  <Image url="@redf.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Hyperlink>
+      <Hyperlink fx:id="yeFlask" focusTraversable="false" layoutX="383.0" layoutY="-1.0">
+         <graphic>
+            <ImageView fitHeight="132.0" fitWidth="87.0">
+               <image>
+                  <Image url="@yellowf.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Hyperlink>
+      <Hyperlink fx:id="grFlask" focusTraversable="false" layoutX="132.0" layoutY="-11.0">
+         <graphic>
+            <ImageView fitHeight="141.0" fitWidth="100.0">
+               <image>
+                  <Image url="@greenF.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Hyperlink>
+      <ImageView fitHeight="26.0" fitWidth="38.0" layoutX="435.0" layoutY="346.0">
+         <image>
+            <Image url="@arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

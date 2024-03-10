@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signupController">
+    <children>
+        <ImageView fx:id="backgroundImageView" disable="true" fitHeight="582.0" fitWidth="780.0" layoutX="-1.0" pickOnBounds="true">
+            <image>
+                <Image url="@background.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="codeImageView" fitHeight="73.0" fitWidth="71.0" layoutX="443.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@code.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="houseImageView" fitHeight="344.0" fitWidth="324.0" layoutX="376.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@house.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d2b1d25c" height="368.0" layoutX="30.0" layoutY="112.0" stroke="#ff40ef00" strokeType="INSIDE" width="314.0" />
+        <Label fx:id="signup" alignment="TOP_CENTER" contentDisplay="TOP" ellipsisString="" layoutX="107.0" layoutY="131.0" prefHeight="48.0" prefWidth="159.0" text="Sign up" textAlignment="CENTER" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+            <font>
+                <Font name="Cambria Bold" size="36.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <Label fx:id="username" layoutX="70.0" layoutY="194.0" prefHeight="18.0" prefWidth="95.0" text="Gamers name" textFill="WHITE">
+            <font>
+                <Font name="Book Antiqua Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameT" layoutX="67.0" layoutY="221.0" prefHeight="25.0" prefWidth="239.0" promptText="enter your username">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <effect>
+                <Glow>
+                    <input>
+                        <InnerShadow color="#d2b1d200">
+                            <input>
+                                <Lighting diffuseConstant="1.27" specularConstant="0.64" specularExponent="20.23" surfaceScale="1.33">
+                                    <bumpInput>
+                                        <Shadow color="#d2b1d2a8" />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant color="#dddddd" />
+                                    </light>
+                                </Lighting>
+                            </input>
+                        </InnerShadow>
+                    </input>
+                </Glow>
+            </effect>
+        </TextField>
+        <Label fx:id="Email" layoutX="70.0" layoutY="267.0" prefHeight="18.0" prefWidth="75.0" text="Email" textFill="WHITE">
+            <font>
+                <Font name="Book Antiqua Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="emailField" layoutX="67.0" layoutY="291.0" prefHeight="25.0" prefWidth="239.0" promptText="usermame@gmail.com">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <effect>
+                <Glow>
+                    <input>
+                        <InnerShadow color="#d2b1d200">
+                            <input>
+                                <Lighting diffuseConstant="1.27" specularConstant="0.64" specularExponent="20.23" surfaceScale="1.33">
+                                    <bumpInput>
+                                        <Shadow color="#d2b1d2a8" />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant color="#e8e6e6" />
+                                    </light>
+                                </Lighting>
+                            </input>
+                        </InnerShadow>
+                    </input>
+                </Glow>
+            </effect>
+        </TextField>
+        <Label fx:id="password" layoutX="70.0" layoutY="331.0" prefHeight="18.0" prefWidth="75.0" text="password" textFill="WHITE">
+            <font>
+                <Font name="Book Antiqua Bold" size="14.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="PASS" layoutX="66.0" layoutY="357.0" prefHeight="25.0" prefWidth="239.0" promptText="enter your password">
+            <effect>
+                <Glow level="0.4">
+                    <input>
+                        <InnerShadow color="#d0bbce">
+                            <input>
+                                <Lighting>
+                                    <bumpInput>
+                                        <Shadow color="WHITE" />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant />
+                                    </light>
+                                </Lighting>
+                            </input>
+                        </InnerShadow>
+                    </input>
+                </Glow>
+            </effect>
+        </PasswordField>
+      <Label fx:id="registerB" alignment="CENTER" layoutX="41.0" layoutY="385.0" prefHeight="29.0" prefWidth="285.0" textFill="#d32b2b">
+         <font>
+            <Font name="Akhbar MT" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="cancel" fitHeight="127.0" fitWidth="127.0" layoutX="187.0" layoutY="369.0" onMouseEntered="#cancelEnterMouse" onMouseExited="#cancelExitMouse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cancel-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="reg" fitHeight="134.0" fitWidth="134.0" layoutX="51.0" layoutY="366.0" onMouseEntered="#regEnterMouse" onMouseExited="#regExitMouse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo_2023-05-10_06-53-14-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="70.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo_2023-05-10_07-00-16-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="regesterMassage" alignment="CENTER" layoutX="68.0" layoutY="169.0" prefHeight="17.0" prefWidth="239.0" textFill="#081b95">
+         <font>
+            <Font name="Akhbar MT" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="213.0" layoutY="421.0" mnemonicParsing="false" onAction="#logupButtonOnAction" opacity="0.0" prefHeight="25.0" prefWidth="75.0" />
+      <Button layoutX="77.0" layoutY="421.0" mnemonicParsing="false" onAction="#signupButtonOnAction1" opacity="0.0" prefHeight="25.0" prefWidth="82.0">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stage2Controller">
+   <children>
+      <ImageView fitHeight="580.0" fitWidth="780.0" pickOnBounds="true">
+         <image>
+            <Image url="@room1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="12.0" layoutX="130.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo_2023-05-02_13-34-20-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button id="memorygame_btn" layoutX="301.0" layoutY="205.0" mnemonicParsing="false" onAction="#signupButtonOnAction" opacity="0.0" prefHeight="82.0" prefWidth="41.0" />
+      <Button id="jewel_btn" layoutX="548.0" layoutY="336.0" mnemonicParsing="false" onAction="#Bejeweled_btn" opacity="0.0" prefHeight="26.0" prefWidth="24.0" />
+      <Button id="nubergame_btn" layoutX="196.0" layoutY="308.0" mnemonicParsing="false" onAction="#numbergame_btn" opacity="0.0" prefHeight="41.0" prefWidth="67.0" />
+      <ImageView fx:id="token1" fitHeight="12.0" fitWidth="24.0" layoutX="470.0" layoutY="270.0" onMouseClicked="#Token1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@video2.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="token2" fitHeight="12.0" fitWidth="12.0" layoutX="355.0" layoutY="365.0" onMouseClicked="#Token2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@video2.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="token3" fitHeight="12.0" fitWidth="12.0" layoutX="89.0" layoutY="369.0" onMouseClicked="#Token3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@video2.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="labe" contentDisplay="TOP" layoutX="31.0" layoutY="44.0" prefHeight="33.0" prefWidth="154.0" text="Numberof token 3/0" textFill="#4a0e3f">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="124.0" layoutY="239.0" mnemonicParsing="false" onAction="#cod" opacity="0.0" prefHeight="26.0" prefWidth="16.0" text="Button" />
+   </children>
+</AnchorPane>
